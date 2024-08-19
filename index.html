@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function redirectToRandomPage() {
+            const pages = ['page1.html', 'page2.html', 'page14.html', 'page3.html', 'page4.html', 'page5.html', 'page6.html', 'page7.html', 'page8.html', 'page9.html', 'page10.html', 'page11.html', 'page12.html', 'page13.html']; // List your page names here
+            const randomPage = pages[Math.floor(Math.random() * pages.length)];
+            window.location.href = randomPage;
+        }
+    </script>
+</head>
+<body>
+
+    <h1>This is the Original Page</h1>
+    <button onclick="redirectToRandomPage()">Go to Random Page</button>
+
+</body>
+</html>

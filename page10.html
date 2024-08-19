@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 10</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .styled-image {
+            width: 300px;              /* Set the width of the image */
+            height: auto;              /* Set the height automatically based on the width to maintain aspect ratio */
+            border: 5px solid #555;    /* Add a solid border around the image */
+            border-radius: 10px;       /* Round the corners of the image */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+            transition: transform 0.3s ease; /* Smoothly scale the image on hover */
+        }
+
+        .styled-image:hover {
+            transform: scale(1.1);     /* Scale the image to 110% on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>You are on Page 10</h1>
+    <br>
+    <img src="assets/pg10.png" alt="Example Image" class="styled-image">
+    <br><br>
+    <button onclick="window.location.href='index.html'">Return to Original Page</button>
+
+</body>
+</html>
